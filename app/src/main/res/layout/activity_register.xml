@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10DEF8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="BIO/HEALTH INFO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#EA3F3F" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/ic_generated_1" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edit_rounded"
+            android:hint="Name"
+            android:paddingLeft="10dp"
+            android:textColorHint="#0C0C0C" />
+
+        <Spinner
+            android:id="@+id/my_spinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_rounded" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_rounded"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:text="Gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#0C0C0C" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:buttonTint="#0C0C0C"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#0C0C0C" />
+
+                <RadioButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:buttonTint="#0C0C0C"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#0C0C0C" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_rounded"
+            android:hint="Any Health Issues"
+            android:paddingLeft="10dp"
+            android:textColorHint="#0C0C0C" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:buttonTint="#0C0C0C"
+            android:layout_marginTop="20dp"
+            android:text="Diabetes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0C0C0C" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#0C0C0C"
+            android:text="Heart Diseases"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0C0C0C" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#0C0C0C"
+            android:text="Kidney Failure"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0C0C0C" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#0C0C0C"
+            android:text="Respiratory Diseases"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0C0C0C" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#0C0C0C"
+            android:text="Other Chronic Diseases"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#0C0C0C" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="REGISTER"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#EA3F3F" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_rounded"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:hint="@string/username"
+            android:textColorHint="#0C0C0C" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_rounded"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            android:textColorHint="#0C0C0C" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_rounded"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:hint="Confirm Password"
+            android:textColorHint="#0C0C0C" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/edit_rounded"
+            android:backgroundTint="#3F51B5"
+            android:text="@string/register"
+            android:onClick="onReg"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</ScrollView>

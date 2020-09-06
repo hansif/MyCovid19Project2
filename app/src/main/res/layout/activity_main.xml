@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corners"
+                android:onClick="onLogIn"
+                android:text="@string/log_in"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corners"
+                android:onClick="onRegister"
+                android:text="@string/register"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:background="#432121"
+            app:srcCompat="@drawable/covid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="COVID-19 TRACKER"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#A6310C" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="#FFFFFF"
+            app:cardBackgroundColor="#FFEB3B"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/active_cases"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:text="1,35,512"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="270dp"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_upward_24"
+                    android:text="3420"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#0C0C0C" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#FC61FD3E"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="RECOVERED:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="1,10,299"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_upward_24"
+                    android:text="2383"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#0C0C0C" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#FAF44336"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="DEATHS:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="60dp"
+                        android:text="2083"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="290dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_upward_24"
+                    android:text="32"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#0C0C0C" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="BED AVAILABILITY"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#A6310C" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#FA3871E4"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/bed2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="BEDS AVAILABLE:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="35dp"
+                        android:text="46354"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#0C0C0C" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#ED18F4"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/bed1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="BEDS OCCUPIED:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0C0C0C" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="35dp"
+                        android:text="58304"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#0C0C0C" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

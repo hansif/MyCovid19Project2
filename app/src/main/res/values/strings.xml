@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyCovid19Project</string>
+    <string name="bed_allocation_app">BED ALLOCATION               APP</string>
+    <string name="log_in">LOG IN</string>
+    <string name="register">REGISTER</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="active_cases">ACTIVE CASES:</string>
+</resources>
